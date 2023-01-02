@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Fjalla+One&display=swap');
+
+:root{
+  --gradient :linear-gradient(45deg,
+  white,
+   #00BDFE,
+   #00BDFE,
+   #84E4F7,
+   white,
+   pink,
+   hotpink,
+      hotpink,
+      white);
+
+      --gradient2 : linear-gradient(red, blue, green);
+      
+} 
+@keyframes background-animation1 {
+  0%
+  {
+    background-position : left; 
+  }
+  50%
+  {
+    background-position : center;
+  }
+  100% 
+  {
+    background-position: right; 
+  }
+}
+
+
+.container
+{
+
+/*display: grid;
+grid-template-columns: 28% 72%;
+grid-template-rows: auto;
+*/
+display: flex;
+flex-direction: row;
+border-style: solid;
+
+ 
+}
+.greeting_content
+{
+/*  background : var(--gradient);
+    background-clip: text;
+    background-size :300%;
+    animation: background-animation1 5s infinite alternate;
+    */
+   width: fit-content;
+   background-image: url(linearG2.svg);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent; 
+   /*grid-column-end: 2;
+   grid-column-start:1;
+   grid-row-start: 1;
+   grid-row-end: 2;*/
+   padding: 4px;
+   margin-bottom:4px;
+   position: relative;
+   
+  }
+
+
+.intro_raw_text
+{
+  font-family: 'Fjalla One';
+  font-size: 3.5vw;
+border: #00BDFE;
+border-width: medium;
+
+}
+.intro_raw_text2
+{
+  font-family: 'Fjalla One';
+ font-size: 7vw;
+ /*align-self: center;
+ justify-self: center;
+ */
+
+}
+.title
+{
+font-size: small;
+}
+.picture
+{
+width:60vw;
+height:70vw;
+background-image: url(images/ascend.png.jpg);
+background-size: cover;
+border-radius:26vw ;
+background-repeat: no-repeat;
+/*grid-column-start: 2;
+grid-column-end: -1;
+grid-row-start: 1;
+grid-row-end: -1;
+align-items: center;
+*/
+margin-top:4px;
+padding-right:4px;
+
+}
